@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+
+        <!-- Personal Details -->
+
+        <div class="row">
+            <div class="input-box">
+                <label>First Name</label>
+                <input type="text" id="fname" placeholder="Enter First Name">
+            </div>
+
+            <div class="input-box">
+                <label>Last Name</label>
+                <input type="text" id="lname" placeholder="Enter Last Name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Choose Username">
+            </div>
+
+            <div class="input-box">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div class="input-box">
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+        </div>
+
+        <!-- Contact Details -->
+
+        <div class="row">
+            <div class="input-box">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="10-digit Phone Number">
+            </div>
+
+            <div class="input-box">
+                <label>Alternate Phone</label>
+                <input type="tel" id="altPhone" placeholder="Alternate Number">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                    <label><input type="radio" name="gender" value="Other"> Other</label>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Address -->
+
+        <div class="input-box">
+            <label>Address Line 1</label>
+            <input type="text" id="address1" placeholder="House No., Street">
+        </div>
+
+        <div class="input-box">
+            <label>Address Line 2</label>
+            <input type="text" id="address2" placeholder="Area / Landmark">
+        </div>
+
+        <div class="row">
+
+            <div class="input-box">
+                <label>City</label>
+                <input type="text" id="city">
+            </div>
+
+            <div class="input-box">
+                <label>State</label>
+
+                <select id="state">
+
+                    <option value="">Select State</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Telangana</option>
+                    <option>Karnataka</option>
+                    <option>Tamil Nadu</option>
+                    <option>Kerala</option>
+                    <option>Maharashtra</option>
+                    <option>Delhi</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="input-box">
+
+                <label>Country</label>
+
+                <select id="country">
+
+                    <option value="">Select Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Australia</option>
+                    <option>UK</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>PIN Code</label>
+
+                <input type="number" id="pin">
+
+            </div>
+
+        </div>
+
+        <!-- Education -->
+
+        <div class="row">
+
+            <div class="input-box">
+
+                <label>Qualification</label>
+
+                <select id="qualification">
+
+                    <option value="">Select Qualification</option>
+                    <option>High School</option>
+                    <option>Intermediate</option>
+                    <option>Diploma</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                    <option>B.Com</option>
+                    <option>M.Tech</option>
+                    <option>MBA</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>College / University</label>
+
+                <input type="text" id="college">
+
+            </div>
+
+        </div>
+
+        <!-- Skills -->
+
+        <div class="input-box">
+
+            <label>Skills</label>
+
+            <div class="skills">
+
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+
+                <label><input type="checkbox" name="skills" value="C++"> C++</label>
+
+            </div>
+
+        </div>
+
+        <!-- Security -->
+
+        <div class="input-box">
+
+            <label>Security Question</label>
+
+            <select id="question">
+
+                <option value="">Choose Question</option>
+
+                <option>What is your favourite color?</option>
+
+                <option>What is your pet's name?</option>
+
+                <option>What is your birthplace?</option>
+
+                <option>Who is your favourite teacher?</option>
+
+            </select>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Security Answer</label>
+
+            <input type="text" id="answer">
+
+        </div>
+
+        <!-- Terms -->
+
+        <div class="checkbox">
+
+            <input type="checkbox" id="terms">
+
+            <label for="terms">
+
+                I agree to the Terms & Conditions
+
+            </label>
+
+        </div>
+
+        <button type="submit">
+
+            Register
+
+        </button>
+
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
